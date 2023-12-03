@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 7</title>
+</head>
+<body>
+    <h1>Chapter 7: Creating a Hangman Game </h1>   
+    <script src="chapt7.js"></script>
+
+<!-- <script>
+    // create an array of words
+    var words = [
+        "javascript",
+        "monkey",
+        "amazing",
+        "pancake"
+    ];
+
+    // pick a random word
+    var word = words[Math.floor(Math.random() * words.length)];
+
+    // set up the answer array
+    var answer_array = [];
+    for (var i = 0; i < word.length; i++){
+        answer_array[i] = "_";
+    }
+
+    var remaining_letters = word.length;
+
+    // the game loop
+    while (remaining_letters > 0){
+        //show the player their progress
+        alert(answer_array.join(" "));
+
+        // get a gues from the player
+
+        var guess = prompt("Guess a letter, click cancel to stop playing");
+        if (guess === null){
+            // exit the game loop
+            break;
+        } else if (guess.length !== 1){
+            alert("please enster a single letter");
+        } else {
+            // update the game state with guess
+            for (var j = 0; j < word.length; j++){
+                if(word[j] === guess){
+                    answer_array[j] = guess;
+                    remaining_letters--;
+                }
+            }
+        }
+    // end of the game loop    
+    }
+    // Shoe the answer and congratulate the player
+    alert(answer_array.join(" "));
+    alert("Good job! The answer was " + word);
+</script>     -->
+
+</body>
+</html>
